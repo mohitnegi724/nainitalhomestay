@@ -9,12 +9,14 @@
     <meta name="apple-mobile-web-app-capable" content="yes"><!-- GOOGLE FONT -->
     <link href="https://fonts.googleapis.com/css?family=Hind:400,300,500,600%7cMontserrat:400,700" rel="stylesheet"
         type="text/css" /><!-- CSS LIBRARY -->
-    <link href="css/lib/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/lib/font-hilltericon.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- <link href="css/lib/font-hilltericon.css" rel="stylesheet" type="text/css" /> -->
     <link href="css/lib/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/lib/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css" rel="stylesheet" type="text/css" />
     <link href="css/lib/jquery-ui.min.css" rel="stylesheet" type="text/css" />
     <link href="css/lib/magnific-popup.css" rel="stylesheet" type="text/css" />
+    <link href="./css/swiper.css" rel="stylesheet"/>
     <link href="css/lib/settings.css" rel="stylesheet" type="text/css" />
     <link href="css/lib/bootstrap-select.min.css" rel="stylesheet" type="text/css" /><!-- MAIN STYLE -->
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
@@ -22,20 +24,26 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+
 <script>
- $(".owl-prev").html('<p>"Right"</p>');
- $(".owl-next").html('<p>"Right"</p>');
+ $(".owl-prev").html('<i class="fas fa-arrow-left"></i>');
+ $(".owl-next").html('<i class="fas fa-arrow-right"></i>');
 
 $(document).ready(function(){
-    var owl = $(".owl-carousel");
-    owl.owlCarousel({
+    $(".owl-carousel").owlCarousel({
+        autoplay: true,
         items: 1,
-        autoPlay: false,
-        autoPlaySpeed: 1000,
-        autoPlayTimeout: 0
+        loop: true,
+        nav: true,
+        autoPlaySpeed: 500,
+        autoPlayTimeout: 1000
     });
 });
 </script>
+
+
 	<style type="text/css">#owl-buttons {
     margin-top: 100px!important;
     color: #000!important;
@@ -56,16 +64,19 @@ a:hover {
 }
 	</style>
 </head>
-<!--[if IE 7]> <body class="ie7 lt-ie8 lt-ie9 lt-ie10"> <![endif]--><!--[if IE 8]> <body class="ie8 lt-ie9 lt-ie10"> <![endif]--><!--[if IE 9]> <body class="ie9 lt-ie10"> <![endif]--><!--[if (gt IE 9)|!(IE)]><!-->
-<body><!--<![endif]--><!-- PRELOADER -->
-<div id="preloader"></div>
-<!-- END / PRELOADER --><!-- PAGE WRAP -->
+<body>
 
-<div id="page-wrap"><!-- HEADER -->
-<header id="header"><!-- HEADER TOP -->
+<!-- Pre Loader -->
+<div id="preloader"></div>
+
+
+<div id="page-wrap">
+
+<!-- Header -->
+<header id="header">
 
 <div class="header_content row" id="header_content">
-<div class="container"><!-- HEADER LOGO -->
+<div class="container-fluid"><!-- HEADER LOGO -->
 <div class="header_logo col-lg-2"><a href="#"><img alt="" src="images/logo-header.png" /></a></div>
 <!-- END / HEADER LOGO --><!-- HEADER MENU -->
 
@@ -74,43 +85,92 @@ a:hover {
     <div class="header_left float-right">
         <!-- <script type='text/javascript' src='https://darksky.net/widget/default-small/29.340086,79.496251/ca12/en.js?units=ca'></script> -->
                 <span style="margin-right: 15px;"> <a
-                href="https://www.google.com/maps/place/29.345835,79.482674" style="color:#fff;" target="_blank">Vergomont @ Jeolikot</a></span>
+                href="http://bit.ly/2GZcCTz" style="color:#fff;" target="_blank">Vergomont @ Jeolikot</a></span>
                 <span style="margin-right: 15px;"><a href="tel:83838-62028" style="color:#fff; padding-left: 3px;">83838-62028</a> / <a href="tel:83838-62028" style="color:#fff;">83838-62028</a></span> 
                 <span style="margin-right: 15px;"><a href="mailto:vergomontstay@gmail.com" style="color:#fff;padding-left: 3px;" target="_blank">vergomontstay@gmail.com</a></span></div>
     </div>
 </nav>
 <!-- END / HEADER MENU --><!-- MENU BAR --><!-- END / MENU BAR --></div>
 </div>
-<!-- END / HEADER LOGO & MENU --></header>
-<!-- END / HEADER --><!-- BANNER SLIDER -->
+</header>
 
-<section class="section-slider">
-<div class="banner-slider" id="banner-slider"><!-- ITEM -->
-<div class="slider-item text-center" data-image="images/slider/img-1.jpg">
+
+
+
+<!-- Hotel Homepage-->
+<section style="width:100%;height:100%">
+    <div class="swiper-container">
+            <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="Home-Banner-Slider">
+                            <div class="slider-item text-center" data-image="images/slider/img-1.jpg">
+                            <div class="slider-text"><span class="slider-caption slider-caption-2" style="color:#fff;;
+                            font-size:53px; top: 30%; ">The Heritage<br />
+                            Holiday Home </span></div>
+                            
+                            <div class="slider-text" style=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="Home-Banner-Slider">
+                            <div class="slider-item text-center" data-image="images/slider/img-3.jpg">
+                                <div class="slider-text"><span class="slider-caption slider-caption-2" style="color:#fff; color:#fff;font-size:53px;">Make this holiday<br />
+                                    Classic </span>
+                                </div>                            
+                            <!-- <div class="slider-text" style=""></div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                            <div class="Home-Banner-Slider">
+                                <div class="slider-item text-center" data-image="images/slider/img-2-1.jpg">
+                                    <div class="slider-text">
+                                        <h2 class="slider-caption slider-caption-2" style="color:#fff;font-size:53px;">Live the old World</h2>
+                                        <span class="slider-caption slider-caption-2" style="color:#fff;font-size:53px;">Charm</span><br />
+                                            <!-- <span class="slider-icon"><img alt="" src="images/icon-slider-2.png" /></span></div> -->
+                                    </div>                                
+                                <div class="slider-text" style=""></div>
+                                </div>
+                            </div>
+                    </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+
+<!-- Hotel Homepage Display None-->
+<section class="section-slider" style="display:none">
+
+<div class="banner-slider owl-carousel owl-theme" id="banner-slider">
+<div class="slider-item text-center" data-image="images/slider/img-1-1.jpg">
 <div class="slider-text"><span class="slider-caption slider-caption-2" style="color:#fff;;
 font-size:53px; top: 30%; ">The Heritage<br />
 Holiday Home </span></div>
 
 <div class="slider-text" style=""></div>
 </div>
-<!-- ITEM --><!-- ITEM -->
 
-<div class="slider-item text-center" data-image="images/slider/img-3.jpg">
+<div class="slider-item text-center" data-image="images/slider/img-3-1.jpg">
 <div class="slider-text"><span class="slider-caption slider-caption-2" style="color:#fff; color:#fff;font-size:53px;">Make this holiday<br />
 Classic </span></div>
 </div>
-<!-- ITEM --><!-- ITEM -->
 
-<div class="slider-item text-center" data-image="images/slider/img-2.jpg">
+<div class="slider-item text-center" data-image="images/slider/img-2-1.jpg">
 <div class="slider-text">
 <h2 class="slider-caption slider-caption-2" style="color:#fff;font-size:53px;">Live the old World</h2>
 <span class="slider-caption slider-caption-2" style="color:#fff;font-size:53px;">Charm</span><br />
 <!-- <span class="slider-icon"><img alt="" src="images/icon-slider-2.png" /></span></div> -->
 </div>
-<!-- ITEM --></div>
-</section>
-<!-- END / BANNER SLIDER --><!-- CHECK AVAILABILITY -->
+</div>
 
+</section>
+
+
+<!-- Hotel Description-->
 <section class="section-our-best bg-white">
     <div class="container-fluid ">
         <div class="our-best">
@@ -161,55 +221,62 @@ Classic </span></div>
                 </div>
                 <div class="col-md-5 ">
                     <!-- <div class="img"><b><b><img alt="" src="images/home/ourbest/img-1.jpg" /> </b></b></div> -->
-                    <iframe
-                        src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FVergomontstay%2Fvideos%2F840163879654358%2F&show_text=0&width=560"
-                        width="90%" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                        allowTransparency="true" allowFullScreen="true"></iframe>
+                    <div class="row">
+                        <div class="col-md-12">
+                                <div class="facebook-responsive">
+                                    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FVergomontstay%2Fvideos%2F840163879654358%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+                                </div>
+                        </div>
+                    </div>
                     <br>
-                    <div class="wpb_column vc_column_container vc_col-sm-6">
-                        <div class="vc_column-inner ">
-                            <div class="wpb_wrapper">
-                                <div class="awe-special-heading text-left" style="color:#232323;">
-                                    <h2>SERVICES WE PROVIDE</h2>
-                                </div>
-                                <div class="wpb_text_column wpb_content_element ">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="wpb_column vc_column_container vc_col-sm-10">
+                                <div class="vc_column-inner ">
                                     <div class="wpb_wrapper">
-                                        <p>One of Catalina Island’s best-loved hotels, Hotel Vista Del Mar is recognized as one of Avalon’s
-                                            leading hotels with gracious island hospitality, thoughtful amenities and distinctive .</p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="vc_column-inner">
-                                            <div class="wpb_wrapper services">
-                                                    <ul>
-                                                        <li><img style="width:25px;height:25px;" src="images/socialIcons/Checkbox.png"/>
-                                                            <p>Coffee maker</p>
-                                                        </li>
-                                                        <li><img style="width:25px;height:25px;" src="images/socialIcons/Checkbox.png" />
-                                                            <p>FM</p>
-                                                        </li>
-                                                        <li><img style="width:25px;height:25px;" src="images/socialIcons/Checkbox.png" />
-                                                            <p>WiFi</p>
-                                                        </li>
-                                                    </ul>
+                                        <div class="awe-special-heading text-left" style="color:#232323;">
+                                            <h2>SERVICES WE PROVIDE</h2>
+                                        </div>
+                                        <div class="wpb_text_column wpb_content_element ">
+                                            <div class="wpb_wrapper">
+                                                <p>One of Catalina Island’s best-loved hotels, Hotel Vista Del Mar is recognized as one of Avalon’s
+                                                    leading hotels with gracious island hospitality, thoughtful amenities and distinctive .</p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="vc_column-inner">
-                                            <div class="wpb_wrapper services">
-                                                    <ul>
-                                                        <li><img style="width:25px;height:25px;" src="images/socialIcons/Checkbox.png" />
-                                                            <p>Breakfast</p>
-                                                        </li>
-                                                        <li><img style="width:25px;height:25px;" src="images/socialIcons/Checkbox.png" />
-                                                            <p>Tea</p>
-                                                        </li>
-                                                        <li><img style="width:25px;height:25px;" src="images/socialIcons/Checkbox.png" />
-                                                            <p>TV</p>
-                                                        </li>
-                                                    </ul>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="vc_column-inner">
+                                                    <div class="wpb_wrapper services">
+                                                            <ul>
+                                                                <li><img style="width:25px;height:25px;" src="images/socialIcons/Checkbox.png"/>
+                                                                    <p>Coffee maker</p>
+                                                                </li>
+                                                                <li><img style="width:25px;height:25px;" src="images/socialIcons/Checkbox.png" />
+                                                                    <p>FM</p>
+                                                                </li>
+                                                                <li><img style="width:25px;height:25px;" src="images/socialIcons/Checkbox.png" />
+                                                                    <p>WiFi</p>
+                                                                </li>
+                                                            </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="vc_column-inner">
+                                                    <div class="wpb_wrapper services">
+                                                            <ul>
+                                                                <li><img style="width:25px;height:25px;" src="images/socialIcons/Checkbox.png" />
+                                                                    <p>Breakfast</p>
+                                                                </li>
+                                                                <li><img style="width:25px;height:25px;" src="images/socialIcons/Checkbox.png" />
+                                                                    <p>Tea</p>
+                                                                </li>
+                                                                <li><img style="width:25px;height:25px;" src="images/socialIcons/Checkbox.png" />
+                                                                    <p>TV</p>
+                                                                </li>
+                                                            </ul>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -224,6 +291,7 @@ Classic </span></div>
 </section>
 
 
+<!-- Rooms And Prices -->
 <section class="Prices">
     <div class="container">
         <div class="row" style="padding-top: 60px">
@@ -241,79 +309,58 @@ Classic </span></div>
                                 <div class="owl-item" style="width: 770px;">
                                     <div class="row">
                                         <div>
-                                            <!-- ITEM -->
                                             <div class="col-md-4 roomCard">
-                                                    <div class="img"> <a
-                                                            href="http://demo.awethemes.com/hillter/room_type/couple-room/"><img
+                                                    <div class="img"><img
                                                                 width="720" height="430"
                                                                 src="http://demo.awethemes.com/hillter/wp-content/uploads/2017/02/listroom_1-720x430.jpg"
                                                                 class="attachment-awe-room-slider size-awe-room-slider wp-post-image"
-                                                                alt=""></a></div>
+                                                                alt=""></div>
                                                     <div class="text">
-                                                        <h2> <a href="http://demo.awethemes.com/hillter/room_type/couple-room/">Couple
-                                                                Room</a></h2>
+                                                        <h2>Deluxe Room</h2>
                                                         <p class="price"> <span class="amount"><span class="awebooking-price "><span
                                                                         class="awebooking-price__symbol">$</span><span
                                                                         class="awebooking-price__amount">150</span></span></span>/days
                                                         </p>
                                                 </div>
-                                            </div> <!-- END / ITEM -->
-                                            <!-- ITEM -->
+                                            </div>
                                             <div class="col-md-4 roomCard">
-                                                <div class="img"> <a href="http://demo.awethemes.com/hillter/room_type/couple-room/"><img width="720" height="430"
+                                                <div class="img"><img width="720" height="430"
                                                             src="http://demo.awethemes.com/hillter/wp-content/uploads/2017/02/listroom_1-720x430.jpg"
-                                                            class="attachment-awe-room-slider size-awe-room-slider wp-post-image" alt=""></a></div>
+                                                            class="attachment-awe-room-slider size-awe-room-slider wp-post-image" alt=""></div>
                                                 <div class="text">
-                                                    <h2> <a href="http://demo.awethemes.com/hillter/room_type/couple-room/">Couple
-                                                            Room</a></h2>
+                                                    <h2>Deluxe Room</h2>
                                                     <p class="price"> <span class="amount"><span class="awebooking-price "><span
                                                                     class="awebooking-price__symbol">$</span><span
                                                                     class="awebooking-price__amount">150</span></span></span>/days
                                                     </p>
                                                 </div>
-                                            </div> <!-- END / ITEM -->
-                                            <!-- ITEM -->
+                                            </div>
                                             <div class="col-md-4 roomCard">
-                                                <div class="img"> <a href="http://demo.awethemes.com/hillter/room_type/couple-room/"><img width="720" height="430"
+                                                    <div class="img"><img
+                                                                width="720" height="430"
+                                                                src="http://demo.awethemes.com/hillter/wp-content/uploads/2017/02/listroom_1-720x430.jpg"
+                                                                class="attachment-awe-room-slider size-awe-room-slider wp-post-image"
+                                                                alt=""></div>
+                                                    <div class="text">
+                                                        <h2>Deluxe Room</h2>
+                                                        <p class="price"> <span class="amount"><span class="awebooking-price "><span
+                                                                        class="awebooking-price__symbol">$</span><span
+                                                                        class="awebooking-price__amount">150</span></span></span>/days
+                                                        </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 roomCard">
+                                                <div class="img"><img width="720" height="430"
                                                             src="http://demo.awethemes.com/hillter/wp-content/uploads/2017/02/listroom_1-720x430.jpg"
-                                                            class="attachment-awe-room-slider size-awe-room-slider wp-post-image" alt=""></a></div>
+                                                            class="attachment-awe-room-slider size-awe-room-slider wp-post-image" alt=""></div>
                                                 <div class="text">
-                                                    <h2> <a href="http://demo.awethemes.com/hillter/room_type/couple-room/">Couple
-                                                            Room</a></h2>
+                                                    <h2>Deluxe Room</h2>
                                                     <p class="price"> <span class="amount"><span class="awebooking-price "><span
                                                                     class="awebooking-price__symbol">$</span><span
                                                                     class="awebooking-price__amount">150</span></span></span>/days
                                                     </p>
                                                 </div>
-                                            </div> <!-- END / ITEM -->
-                                            <!-- ITEM -->
-                                            <div class="col-md-4 roomCard">
-                                                <div class="img"> <a href="http://demo.awethemes.com/hillter/room_type/couple-room/"><img width="720" height="430"
-                                                            src="http://demo.awethemes.com/hillter/wp-content/uploads/2017/02/listroom_1-720x430.jpg"
-                                                            class="attachment-awe-room-slider size-awe-room-slider wp-post-image" alt=""></a></div>
-                                                <div class="text">
-                                                    <h2> <a href="http://demo.awethemes.com/hillter/room_type/couple-room/">Couple
-                                                            Room</a></h2>
-                                                    <p class="price"> <span class="amount"><span class="awebooking-price "><span
-                                                                    class="awebooking-price__symbol">$</span><span
-                                                                    class="awebooking-price__amount">150</span></span></span>/days
-                                                    </p>
-                                                </div>
-                                            </div> <!-- END / ITEM -->
-                                            <!-- ITEM -->
-                                            <div class="col-md-4 roomCard">
-                                                <div class="img"> <a href="http://demo.awethemes.com/hillter/room_type/couple-room/"><img width="720" height="430"
-                                                            src="http://demo.awethemes.com/hillter/wp-content/uploads/2017/02/listroom_1-720x430.jpg"
-                                                            class="attachment-awe-room-slider size-awe-room-slider wp-post-image" alt=""></a></div>
-                                                <div class="text">
-                                                    <h2> <a href="http://demo.awethemes.com/hillter/room_type/couple-room/">Couple
-                                                            Room</a></h2>
-                                                    <p class="price"> <span class="amount"><span class="awebooking-price "><span
-                                                                    class="awebooking-price__symbol">$</span><span
-                                                                    class="awebooking-price__amount">150</span></span></span>/days
-                                                    </p>
-                                                </div>
-                                            </div> <!-- END / ITEM -->
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -326,26 +373,33 @@ Classic </span></div>
     </div>
 </section>
 
+
+<!-- Pages -->
 <section class="section-accomd">
     <div class="container">
         <div class="row">
+                <div class="hoteldesc">
+                    <h2 class="heading text-center"><b><b>THE VERGOMONT HISTORY</b></b></h2>
+                </div>
+        </div>
+        <div class="row">
             <!-- <div class="owl-single"> -->
                 <div class="col-md-4">
-                <div class="accomd-modations-room">
-                <div class="img"><img alt="" src="images/room/img-1.jpg" /></div>
+                <div>
+                <div class="propHistoryCard"><img alt="" src="images/room/img-1.jpg" /></div>
                 </div>
                 </div>
                 <!-- END / ITEM -->
 
                 <div class="col-md-4">
-                <div class="accomd-modations-room">
-                <div class="img"><img alt="" src="images/room/img-2.jpg" /></div>
+                <div>
+                <div class="propHistoryCard"><img alt="" src="images/room/img-2.jpg" /></div>
                 </div>
                 </div>
 
                 <div class="col-md-4">
-                <div class="accomd-modations-room">
-                <div class="img"><img alt="" src="images/room/img-3.jpg" /></div>
+                <div>
+                <div class="propHistoryCard"><img alt="" src="images/room/img-3.jpg" /></div>
                 </div>
                 </div>
         </div>
@@ -353,6 +407,7 @@ Classic </span></div>
 </section>
 
 
+<!-- GALLERY -->
 <section class="section-gallery bg-white">
 <div class="gallery  no-padding">
 <h2 class="heading text-center"><b><b>GALLERY</b></b></h2>
@@ -495,9 +550,9 @@ Classic </span></div>
 </div>
 <b><b> <!-- GALLERY CONTENT --> </b></b></div>
 </section>
-<b><b> <!-- END / GALLERY --> <!-- FOOTER --> </b></b>
 
 
+<!-- experiences -->
 <section class="experiences">
     <div class="container-fluid">
     <h2 class="heading text-center row"><b><b>EXPERIENCES</b></b></h2>
@@ -537,8 +592,9 @@ Classic </span></div>
     </div>
 </section>
 
+<!-- footer -->
 <br>
-<footer id="footer"><b><b><!-- FOOTER TOP --> </b></b>
+<footer id="footer">
 
 <div class="footer_top">
 <div class="container">
@@ -618,6 +674,15 @@ Classic </span></div>
 </div>
 </div>
 </footer>
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+                  navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+</script>
 <script type="text/javascript" src="js/lib/jquery-1.11.0.min.js"></script> <script type="text/javascript" src="js/lib/jquery-ui.min.js"></script>
 <script type="text/javascript" src="js/lib/bootstrap.min.js"></script> <script type="text/javascript" src="js/lib/bootstrap-select.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;signed_in=true"></script> <script type="text/javascript" src="js/lib/isotope.pkgd.min.js"></script> <script type="text/javascript" src="js/lib/jquery.themepunch.revolution.min.js"></script> <script type="text/javascript" src="js/lib/jquery.themepunch.tools.min.js"></script> <script type="text/javascript" src="js/lib/owl.carousel.js"></script> <script type="text/javascript" src="js/lib/jquery.appear.min.js"></script> <script type="text/javascript" src="js/lib/jquery.countTo.js"></script> <script type="text/javascript" src="js/lib/jquery.countdown.min.js"></script> <script type="text/javascript" src="js/lib/jquery.parallax-1.1.3.js"></script> <script type="text/javascript" src="js/lib/jquery.magnific-popup.min.js"></script> 
 <script type="text/javascript" src="js/lib/SmoothScroll.js"></script>

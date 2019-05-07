@@ -122,6 +122,7 @@ body {
 }
 
 .experiences{
+    text-align: justify;
     position: relative;
     display: inline-block;
     width: 100%;
@@ -189,6 +190,7 @@ body {
 .services ul li p{
     text-transform: uppercase;
     margin-left: 10px;
+    font-size:12px;
 }
 .Prices{
     width:100%;
@@ -202,6 +204,26 @@ body {
 }
 .propHistoryCard{
     box-shadow: 0px 0px 11px 5px rgb(32,32,32, 0.1);
+    transition: 0.9s ease-in-out;
+}
+.propHistoryCard:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .18);
+}
+.roomOption{
+    margin-right:auto;
+    margin-left:auto;
+    width: 95%;
+    margin-top:5px;
+    margin-bottom:5px;
+    position: relative;
+    height:100%;
+    padding:10px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, .18);
+}
+#roomPreview img{
+    object-fit: cover;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .18);
+    height:100%;
 }
  .awe-btn,
 .h1,
@@ -1958,6 +1980,9 @@ blockquote p:after {
     width: 100%;
     height: 100%;
 }
+.OurBest{
+    font-size:12px;
+}
 
 .Home-Banner-Slider .slider-item {
     background-size: cover;
@@ -1967,7 +1992,10 @@ blockquote p:after {
 .Home-Banner-Slider .slider-item .slider-text {
     position: absolute;
     top: 50%;
-    width: 100%
+    width: 100%;
+    text-shadow: 0px 0px 7px rgba(32,32,32,0.5);
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
 
 .Home-Banner-Slider .slider-item .slider-text .slider-caption {

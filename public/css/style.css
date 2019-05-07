@@ -32,7 +32,10 @@
 *{
     font-family: Montserrat !important
 }
-
+/* width */
+::-webkit-scrollbar {
+    width: 0.5px;
+  }
 
 .heading,
 body,
@@ -113,17 +116,20 @@ body {
     margin: 0;
     letter-spacing: .014em
 }
+.hoteldesc{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .experiences{
     position: relative;
     display: inline-block;
     width: 100%;
     height: 100%;
+    background: #fff;
     padding-top: 10%;
     padding-bottom: 10%;
 
-}
-.experienceList{
-    display: inline;
 }
 .experienceList .title{
     font-size: 20px;
@@ -186,11 +192,16 @@ body {
 }
 .Prices{
     width:100%;
-    height:100vh;
+    height:100%;
+    padding-bottom: 50px;
+    padding-top: 50px;
     position: relative;
 } 
 .roomCard{
     margin-top: 10px;
+}
+.propHistoryCard{
+    box-shadow: 0px 0px 11px 5px rgb(32,32,32, 0.1);
 }
  .awe-btn,
 .h1,
@@ -1871,6 +1882,12 @@ blockquote p:after {
     bottom: 0
 }
 
+.icon-arrow-left7 { left: 0; }
+.icon-arrow-left7:before { content: "\f053"; }
+.icon-arrow-right7 { right: 0; }
+.icon-arrow-right7:before { content: "\f054"; }
+
+
 .banner-slider .slider-item .slider-text,
 .event-item .text .text-cn {
     -ms-transform: translate(0, -50%);
@@ -1937,12 +1954,36 @@ blockquote p:after {
     margin-top: 30px
 }
 
-.banner-slider .owl-next,
+.Home-Banner-Slider{
+    width: 100%;
+    height: 100%;
+}
+
+.Home-Banner-Slider .slider-item {
+    background-size: cover;
+    position: relative
+}
+
+.Home-Banner-Slider .slider-item .slider-text {
+    position: absolute;
+    top: 50%;
+    width: 100%
+}
+
+.Home-Banner-Slider .slider-item .slider-text .slider-caption {
+    padding: 7px 0
+}
+
+.Home-Banner-Slider .slider-item .slider-text .awe-btn {
+    margin-top: 30px
+}
+
+/* .banner-slider .owl-next,
 .banner-slider .owl-prev {
     height: 38px;
     line-height: 38px;
     width: 38px
-}
+} */
 
 .slider-caption,
 .slider-caption-sub {
@@ -2998,6 +3039,7 @@ blockquote p:after {
 }
 
 .section-gallery {
+    background: #f7f7f7;
     padding-top: 60px;
     padding-bottom: 70px
 }
@@ -11022,10 +11064,25 @@ font-size: 16px;
 }
 .section-accomd{
     padding-top: 10%;
+    background: #fff;
     padding-bottom: 10%;
     position: relative;
     width:100%;
     height: 100%;
+}
+.facebook-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.facebook-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 .section-accomd .owl-single {
     /* border: solid 5px #000000; */
