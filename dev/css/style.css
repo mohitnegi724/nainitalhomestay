@@ -133,8 +133,10 @@ body {
 
 }
 
-.experiencesCard{
-    box-shadow: 0px 0px 11px 5px rgb(32, 32, 32, 0.1);
+
+
+.activityCard{
+    padding:2px;
     transition: 0.9s ease-in-out;
 }
 .experienceList .title{
@@ -760,7 +762,7 @@ mark {
 .heading {
     margin: 0;
     color: #232323;
-    font-size: 36px;
+    font-size: 30px;
     line-height: 1
 }
 
