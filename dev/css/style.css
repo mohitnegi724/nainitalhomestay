@@ -32,11 +32,6 @@
 *{
     font-family: Montserrat !important
 }
-/* width */
-::-webkit-scrollbar {
-    width: 0.5px;
-  }
-
 .heading,
 body,
 section {
@@ -774,7 +769,7 @@ mark {
 .heading {
     margin: 0;
     color: #232323;
-    font-size: 30px;
+    font-size: 28px;
     line-height: 1
 }
 
@@ -2029,7 +2024,7 @@ blockquote p:after {
     position: absolute;
     top: 50%;
     width: 100%;
-    text-shadow: 0px 0px 7px rgba(32,32,32,0.5);
+    text-shadow: 0px 0px 11px rgba(32, 32, 32, 1);
     left: 50%;
     transform: translate(-50%, -50%)
 }
@@ -9774,7 +9769,8 @@ font-size: 16px;
         content: none
     }
     .heading {
-        font-size: 30px
+        font-size: 
+        30px
     }
     .check-availability .availability-form .awe-select:nth-child(2) {
         margin-right: 0!important

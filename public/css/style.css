@@ -32,11 +32,6 @@
 *{
     font-family: Montserrat !important
 }
-/* width */
-::-webkit-scrollbar {
-    width: 0.5px;
-  }
-
 .heading,
 body,
 section {
@@ -128,13 +123,19 @@ body {
     width: 100%;
     height: 100%;
     background: #fff;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
 }
 
-.experiencesCard{
-    box-shadow: 0px 0px 11px 5px rgb(32, 32, 32, 0.1);
+#cont_113f141739e8b1614b822ce94b4a177c{
+    float: left;
+}
+.nomP{
+    display: none !important;
+}
+.activityCard{
+    padding:2px;
     transition: 0.9s ease-in-out;
 }
 .experienceList .title{
@@ -166,6 +167,10 @@ body {
     height: 25px;
     display: inline-block;
     transition: 0.5s ease-in-out;
+}
+
+.SocialMedia {
+    /* text-align: center; */
 }
 
 .SocialMedia a {
@@ -379,6 +384,10 @@ img {
     height: auto;
     vertical-align: middle;
     border: 0
+}
+
+.ActivityCardImage{
+    width: 100%;
 }
 
 .awe-color,
@@ -760,7 +769,7 @@ mark {
 .heading {
     margin: 0;
     color: #232323;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1
 }
 
@@ -1601,8 +1610,9 @@ blockquote p:after {
     position: relative
 }
 
+
 .header_content .header_menu {
-    top:36px;
+    /* top:36px; */
     display: inline-block;
     vertical-align: middle;
     text-align: left;
@@ -2014,7 +2024,7 @@ blockquote p:after {
     position: absolute;
     top: 50%;
     width: 100%;
-    text-shadow: 0px 0px 7px rgba(32,32,32,0.5);
+    text-shadow: 0px 0px 11px rgba(32, 32, 32, 1);
     left: 50%;
     transform: translate(-50%, -50%)
 }
@@ -9759,7 +9769,8 @@ font-size: 16px;
         content: none
     }
     .heading {
-        font-size: 30px
+        font-size: 
+        30px
     }
     .check-availability .availability-form .awe-select:nth-child(2) {
         margin-right: 0!important
@@ -11116,7 +11127,7 @@ font-size: 16px;
     float: left;
 }
 .section-accomd{
-    padding-top: 10%;
+    padding-top: 50px;
     background: #fff;
     padding-bottom: 10%;
     position: relative;
@@ -11162,4 +11173,21 @@ font-size: 16px;
     section.section-slider {
     height: 100vh;
 }
+}
+
+
+
+
+
+
+
+
+
+
+
+.justify{
+    text-align: justify
+}
+.headernavoptions{
+    padding-top: 30px;
 }
