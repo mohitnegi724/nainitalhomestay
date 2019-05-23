@@ -2625,10 +2625,10 @@ blockquote p:after {
     margin-top: 30px
 }
 
-.section-our-best {
+/* .section-our-best {
     padding-top: 40px;
     padding-bottom: 70px
-}
+} */
 
 .our-best .text p {
     color: #333;
@@ -3103,8 +3103,8 @@ blockquote p:after {
 
 .section-gallery {
     background: #f7f7f7;
-    padding-top: 60px;
-    padding-bottom: 70px
+    /* padding-top: 60px; */
+    /* padding-bottom: 70px */
 }
 
 .section-icon {
@@ -11127,9 +11127,7 @@ font-size: 16px;
     float: left;
 }
 .section-accomd{
-    padding-top: 50px;
     background: #fff;
-    padding-bottom: 10%;
     position: relative;
     width:100%;
     height: 100%;
