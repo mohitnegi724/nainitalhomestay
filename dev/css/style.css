@@ -245,12 +245,33 @@ body {
     height:100%;
     padding:10px;
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, .18);
+    transition: 0.9s ease-in-out;
 }
-#roomPreview img{
+.roomOptionImage img{
+    width: 100%;
+    height: 100%;
+    position: relative
+}
+
+.roomOption:hover{
+    box-shadow:-1px 0px 14px 5px rgba(0, 0, 0, .18)
+}
+
+/* #roomPreview img{
     object-fit: cover;
     box-shadow: 0 8px 16px rgba(0, 0, 0, .18);
     height:100%;
+} */
+
+.specialHeading{
+        /* font-size: 72px; */
+        background: -webkit-linear-gradient(rgb(207, 124, 14), #4012e7);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 }
+
+
+
  .awe-btn,
 .h1,
 .h2,
@@ -2016,8 +2037,10 @@ blockquote p:after {
 }
 
 .Home-Banner-Slider .slider-item {
-    background-size: cover;
-    position: relative
+        background-size: cover;
+        position: relative;
+        object-fit: cover;
+        background-position: center;
 }
 
 .Home-Banner-Slider .slider-item .slider-text {
