@@ -265,7 +265,7 @@ body {
 
 .specialHeading{
         /* font-size: 72px; */
-        background: -webkit-linear-gradient(rgb(255, 0, 0), #2e00d6);
+        background: -webkit-linear-gradient(rgb(255, 0, 0,0.8), #2e00d6);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 }
@@ -3166,9 +3166,13 @@ blockquote p:after {
     padding-top: 40px;
     padding-bottom: 120px
 }
+.underline{
+    text-decoration: underline
+}
 
 .gallery .heading {
-    margin-bottom: 40px
+    top: 5px;
+    margin-bottom: 10px
 }
 
 .gallery.no-padding .gallery-cat {
