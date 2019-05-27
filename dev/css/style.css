@@ -37,6 +37,9 @@ body,
 section {
     position: relative
 }
+.hideOnDesktop{
+    display: none
+}
 
 body,
 textarea {
@@ -9806,6 +9809,9 @@ font-size: 16px;
     .room-detail_tab-content:before {
         content: none
     }
+    .hideOnDesktop{
+        display: block;
+    }
     .heading {
         font-size: 
         30px
@@ -10413,9 +10419,21 @@ font-size: 16px;
     .home-guestbook .guestbook-content .guestbook-item .text {
         text-align: center
     }
+    .section-gallery,.Prices,
+    .experiences {
+        padding-top:20px;
+        padding-bottom: 10px; 
+    }
     .heading {
+        top: 0;
+        margin-bottom: 0;
         font-size: 24px
     }
+    .gallery .heading{
+        top: 0;
+        margin-bottom: 0;
+    }
+
     #header .header_top .header_left {
         display: none
     }
@@ -10428,7 +10446,7 @@ font-size: 16px;
     }
     .adjustableText{
         line-height:20px !important;
-        font-size: 13.5px;
+        font-size: 15.5px;
         padding: 10px;
     }
     .check-availability .availability-form{
