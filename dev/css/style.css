@@ -10429,6 +10429,7 @@ font-size: 16px;
     .adjustableText{
         line-height:20px !important;
         font-size: 13.5px;
+        padding: 10px;
     }
     .check-availability .availability-form{
         margin-left: 0;
@@ -10494,7 +10495,7 @@ font-size: 16px;
         font-size: 20px
     }
     .check-availability .availability-form {
-        margin-top: 20px
+        margin-top:0px;
     }
     .adjustableHeading{
         font-size:24px !important
