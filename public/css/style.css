@@ -2155,10 +2155,9 @@ blockquote p:after {
 
 #preloader {
     position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: none;
     z-index: 99999;
     background-color: #f1f1f1
 }
