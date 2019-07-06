@@ -190,13 +190,6 @@ body {
 .roomOption:hover{
     box-shadow:-1px 0px 14px 5px rgba(0, 0, 0, .18)
 }
-
-/* #roomPreview img{
-    object-fit: cover;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, .18);
-    height:100%;
-} */
-
 .specialHeading{
         /* font-size: 72px; */
         /* background: -webkit-linear-gradient(rgb(255, 0, 0,0.8), #2e00d6);
